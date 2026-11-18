@@ -133,9 +133,7 @@ class PosterLightbox {
     this.imgEl = document.getElementById('lightbox-img');
     this.titleEl = document.getElementById('lightbox-title');
     this.tagEl = document.getElementById('lightbox-tag');
-    this.descEl = document.getElementById('lightbox-desc');
     this.toolsEl = document.getElementById('lightbox-tools');
-    this.clientEl = document.getElementById('lightbox-client');
 
     this.init();
   }
@@ -210,8 +208,6 @@ class PosterLightbox {
     }
     if (this.titleEl) this.titleEl.textContent = data.title;
     if (this.tagEl) this.tagEl.textContent = `${data.tag} • ${data.year}`;
-    if (this.descEl) this.descEl.textContent = data.desc;
-    if (this.clientEl) this.clientEl.textContent = `Client: ${data.client}`;
 
     if (this.toolsEl) {
       this.toolsEl.innerHTML = '';
@@ -258,8 +254,6 @@ class PosterLightbox {
     }
     if (this.titleEl) this.titleEl.textContent = data.title;
     if (this.tagEl) this.tagEl.textContent = `${data.tag} • ${data.year}`;
-    if (this.descEl) this.descEl.textContent = data.desc;
-    if (this.clientEl) this.clientEl.textContent = `Client: ${data.client}`;
 
     if (this.toolsEl) {
       this.toolsEl.innerHTML = '';
