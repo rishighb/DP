@@ -149,6 +149,25 @@ class PosterLightbox {
       });
     });
 
+    // Bind click events on EcoCart slide cards
+    document.querySelectorAll('.ecocart-slide-card').forEach((card) => {
+      card.addEventListener('click', () => {
+        if (window.soundEngine) window.soundEngine.playWhoosh();
+        const imgSrc = card.getAttribute('data-img') || card.querySelector('img')?.getAttribute('src');
+        const title = card.getAttribute('data-title') || card.querySelector('.ecocart-slide-title')?.textContent || 'EcoCart App UI/UX Case Study';
+        const num = card.getAttribute('data-slice') || '1';
+        this.openCustom({
+          src: imgSrc,
+          title: title,
+          tag: `Figma Mobile UI • Chapter ${num} of 10`,
+          year: '2024–2025',
+          desc: 'High-fidelity Figma screen mockups, UX workflows, and user journey design for the EcoCart sustainable grocery shopping app.',
+          client: 'EcoCart Mobile Product',
+          tools: ['Figma', 'UI/UX Design', 'Design System', 'Prototyping']
+        });
+      });
+    });
+
     if (this.modalClose) {
       this.modalClose.addEventListener('click', () => this.close());
     }
@@ -177,6 +196,33 @@ class PosterLightbox {
   open(index) {
     this.currentIndex = index;
     this.update();
+    if (this.modal) {
+      this.modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  openCustom(data) {
+    if (!data) return;
+    if (this.imgEl) {
+      this.imgEl.src = data.src;
+      this.imgEl.alt = data.title;
+    }
+    if (this.titleEl) this.titleEl.textContent = data.title;
+    if (this.tagEl) this.tagEl.textContent = `${data.tag} • ${data.year}`;
+    if (this.descEl) this.descEl.textContent = data.desc;
+    if (this.clientEl) this.clientEl.textContent = `Client: ${data.client}`;
+
+    if (this.toolsEl) {
+      this.toolsEl.innerHTML = '';
+      data.tools.forEach(tool => {
+        const chip = document.createElement('span');
+        chip.className = 'tool-chip';
+        chip.textContent = tool;
+        this.toolsEl.appendChild(chip);
+      });
+    }
+
     if (this.modal) {
       this.modal.classList.add('active');
       document.body.style.overflow = 'hidden';

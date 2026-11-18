@@ -3,47 +3,12 @@
  * Navigation, Smooth Scroll, Progress Bar Animations, Modals & Hire Bar
  */
 document.addEventListener('DOMContentLoaded', () => {
-  initPaletteSwitcher();
   initNav();
   initProgressBars();
   initHireBar();
   initContactForm();
   initSoundToggle();
 });
-
-// Color Palette Switcher (Crimson & Luna)
-function initPaletteSwitcher() {
-  const btns = document.querySelectorAll('.palette-btn');
-  if (!btns.length) return;
-
-  const savedTheme = localStorage.getItem('portfolio-palette') || 'crimson';
-  setPalette(savedTheme);
-
-  btns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const theme = btn.getAttribute('data-theme');
-      setPalette(theme);
-      localStorage.setItem('portfolio-palette', theme);
-      if (window.soundEngine) window.soundEngine.playClick();
-    });
-  });
-
-  function setPalette(theme) {
-    if (theme === 'luna') {
-      document.documentElement.setAttribute('data-theme', 'luna');
-    } else {
-      document.documentElement.removeAttribute('data-theme');
-    }
-
-    btns.forEach(b => {
-      if (b.getAttribute('data-theme') === theme) {
-        b.classList.add('active');
-      } else {
-        b.classList.remove('active');
-      }
-    });
-  }
-}
 
 // Sound Toggle in Nav
 function initSoundToggle() {
@@ -134,18 +99,14 @@ function initNav() {
   if (toggleBtn && navLinksList) {
     toggleBtn.addEventListener('click', () => {
       if (window.soundEngine) window.soundEngine.playClick();
-      const isOpen = navLinksList.style.display === 'flex';
-      navLinksList.style.display = isOpen ? 'none' : 'flex';
-      if (!isOpen) {
-        navLinksList.style.flexDirection = 'column';
-        navLinksList.style.position = 'absolute';
-        navLinksList.style.top = '72px';
-        navLinksList.style.left = '0';
-        navLinksList.style.width = '100%';
-        navLinksList.style.background = '#111113';
-        navLinksList.style.padding = '20px';
-        navLinksList.style.borderBottom = '1px solid rgba(255,255,255,0.1)';
-      }
+      navLinksList.classList.toggle('mobile-open');
+    });
+
+    // Close menu when any nav link is clicked
+    navLinksList.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinksList.classList.remove('mobile-open');
+      });
     });
   }
 }

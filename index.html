@@ -7,7 +7,7 @@
   
   <!-- Meta & OpenGraph -->
   <meta name="description" content="Official portfolio of Devi Prasad — Visual Storytelling, Media, Motion Graphics, and Post-Production.">
-  <meta name="theme-color" content="#AD2831">
+  <meta name="theme-color" content="#54ACBF">
   <meta property="og:title" content="Devi Prasad — Video Editing & Motion Design Portfolio">
   <meta property="og:description" content="Passionate creative graduate experienced in Media, motion graphics, post-production, and visual storytelling.">
   <meta property="og:image" content="images/devi_about.png">
@@ -26,7 +26,7 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/png" href="images/devi_about.png">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23011C40'/><text x='50' y='68' font-family='sans-serif' font-size='50' font-weight='bold' fill='%2354ACBF' text-anchor='middle'>DP</text></svg>">
 </head>
 <body>
 
@@ -42,23 +42,12 @@
         <li><a href="#proficiency">Skills</a></li>
         <li><a href="#contents">Contents</a></li>
         <li><a href="#video-editing">Video Editing</a></li>
+        <li><a href="#ui-designing">UI Designing</a></li>
         <li><a href="#graphic-designing">Graphic Designing</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
       <div class="nav-actions">
-        <!-- Palette Switcher: Crimson (#AD2831) & Luna (#54ACBF) -->
-        <div class="palette-switcher" title="Switch Color Palette">
-          <button class="palette-btn active" data-theme="crimson" title="Crimson Palette (#AD2831)">
-            <span class="palette-dot dot-crimson"></span>
-            <span class="palette-lbl">Crimson</span>
-          </button>
-          <button class="palette-btn" data-theme="luna" title="Luna Palette (#54ACBF)">
-            <span class="palette-dot dot-luna"></span>
-            <span class="palette-lbl">Luna</span>
-          </button>
-        </div>
-
         <button class="sound-toggle-btn active" id="sound-toggle" title="Toggle Interaction Sounds">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
             <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
@@ -66,7 +55,7 @@
           Sound On
         </button>
         <button class="btn-hire-nav btn-hire-trigger">Hire Me</button>
-        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu">☰</button>
       </div>
     </div>
   </nav>
@@ -125,17 +114,6 @@
          ========================================================================== -->
     <section class="about-section" id="about">
       <div class="about-grid">
-        <!-- Photo with vertical red accent bar and drafting tape -->
-        <div class="about-photo-wrapper">
-          <div class="drafting-tape tape-top-right" style="width: 70px; height: 18px; top: -7px; right: 14px;"></div>
-          <span class="crop-bracket crop-tl">⌜</span>
-          <span class="crop-bracket crop-br">⌟</span>
-          <div class="about-photo-frame">
-            <div class="about-red-accent-bar"></div>
-            <img src="images/devi_about.png" alt="Devi Prasad - Portrait" class="about-photo">
-          </div>
-        </div>
-
         <!-- Bio & Metrics -->
         <div class="about-details">
           <h1 class="about-heading">
@@ -331,45 +309,50 @@
     </section>
 
     <!-- ==========================================================================
-         CONTENTS (Only 2: 1. Video Editing, 2. Graphic Designing)
+         CONTENTS (3 Sections: 1. Video Editing, 2. UI Designing, 3. Graphic Designing)
          ========================================================================== -->
     <section class="contents-section" id="contents">
       <h2 class="contents-title">CONTENTS</h2>
       <div class="contents-box">
-        <div class="contents-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="contents-grid">
           <!-- 1. Video Editing -->
-          <button class="content-pill-btn" data-scroll="#video-editing" style="padding: 20px 24px; font-size: 1.1rem;">
+          <button class="content-pill-btn" data-scroll="#video-editing">
             1. VIDEO EDITING
           </button>
 
-          <!-- 2. Graphic Designing -->
-          <button class="content-pill-btn" data-scroll="#graphic-designing" style="padding: 20px 24px; font-size: 1.1rem;">
-            2. GRAPHIC DESIGNING
+          <!-- 2. UI Designing -->
+          <button class="content-pill-btn" data-scroll="#ui-designing">
+            2. UI DESIGNING
+          </button>
+
+          <!-- 3. Graphic Designing -->
+          <button class="content-pill-btn" data-scroll="#graphic-designing">
+            3. GRAPHIC DESIGNING
           </button>
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         1. VIDEO EDITING (Presentation Videos, Motion Graphics, Social Media Reels)
+         1. VIDEO EDITING (All 11 Videos Unified Under Video Editing)
          ========================================================================== -->
-    <div id="video-editing"></div>
-    <section class="presentation-section" id="presentation-videos">
+    <section class="presentation-section" id="video-editing">
       <!-- Section Kicker Header -->
       <div class="section-kicker-header">
         <div class="kicker-meta">
           <span>PORTFOLIO</span>
-          <span>SELECTED WORK- 2024-2025</span>
+          <span class="draft-coords">[ 4K 60FPS // TIMELINE MASTER ]</span>
+          <span>SELECTED WORK • 2024–2025</span>
         </div>
         <h2 class="kicker-main-title">
           VIDEO
-          <span class="red-gradient-text">EDITING</span>
+          <span class="luna-gradient-text">EDITING</span>
         </h2>
       </div>
 
       <!-- Presentation Videos Grid: Horizontal 16:9 Frames in 2x2 Grid -->
       <div class="presentation-videos-grid">
-        <!-- Card 1 -->
+        <!-- Presentation Video 1 -->
         <div class="video-card-horizontal-frame" data-vimeo-id="1247714979">
           <div class="video-thumb-container">
             <iframe 
@@ -384,7 +367,7 @@
           </div>
         </div>
 
-        <!-- Card 2 -->
+        <!-- Presentation Video 2 -->
         <div class="video-card-horizontal-frame" data-vimeo-id="1247714980">
           <div class="video-thumb-container">
             <iframe 
@@ -399,7 +382,7 @@
           </div>
         </div>
 
-        <!-- Card 3 -->
+        <!-- Presentation Video 3 -->
         <div class="video-card-horizontal-frame" data-vimeo-id="1247714981">
           <div class="video-thumb-container">
             <iframe 
@@ -414,7 +397,7 @@
           </div>
         </div>
 
-        <!-- Card 4 -->
+        <!-- Presentation Video 4 -->
         <div class="video-card-horizontal-frame" data-vimeo-id="1247714982">
           <div class="video-thumb-container">
             <iframe 
@@ -430,206 +413,370 @@
         </div>
       </div>
 
+      <!-- BAITHAK Podcast Showcase Bar -->
+      <div class="baithak-podcast-card baithak-horizontal-bar" title="Click to play Baithak Podcast preview">
+        <div class="baithak-inner">
+          <div class="baithak-logo-box">
+            <div class="baithak-hindi-title">
+              <span>BAITHAK</span>
+              <svg viewBox="0 0 24 24">
+                <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+                <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+              </svg>
+            </div>
+            <div class="baithak-society-sub">— AMITY'S PODCAST SOCIETY —</div>
+          </div>
+
+          <!-- Waveform visualizer -->
+          <div class="waveform-container">
+            <div class="waveform-bars">
+              <!-- Javascript injects 32 animated bars -->
+            </div>
+          </div>
+
+          <button class="baithak-play-btn" title="Toggle Podcast Audio">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            <span>Listen Audio</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Video Group 2: Director Feature AVs -->
+      <div class="video-group-header">
+        <h3 class="video-group-title">Director Feature AVs & Documentaries</h3>
+        <span class="video-group-meta">4K 60FPS • Cinematic Timeline</span>
+      </div>
+
+      <div class="reels-highlight-row">
+        <!-- Bobby Kolli AV -->
+        <div class="reel-horizontal-card">
+          <div class="reel-horizontal-container">
+            <iframe 
+              src="https://player.vimeo.com/video/1247726053?title=0&byline=0&portrait=0&badge=0&autopause=0" 
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+              frameborder="0" 
+              allow="autoplay; fullscreen; picture-in-picture" 
+              allowfullscreen 
+              title="Bobby Kolli AV" 
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="video-card-caption-bar">
+            <div class="caption-title">Bobby Kolli AV</div>
+            <div class="caption-tag">Director AV • Narrative & Dialogue</div>
+          </div>
+        </div>
+
+        <!-- Vivek Athreya AV -->
+        <div class="reel-horizontal-card">
+          <div class="reel-horizontal-container">
+            <iframe 
+              src="https://player.vimeo.com/video/1247726051?title=0&byline=0&portrait=0&badge=0&autopause=0" 
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+              frameborder="0" 
+              allow="autoplay; fullscreen; picture-in-picture" 
+              allowfullscreen 
+              title="Vivek Athreya AV" 
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="video-card-caption-bar">
+            <div class="caption-title">Vivek Athreya AV</div>
+            <div class="caption-tag">Director Feature AV • Pacing & Rhythm</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Group 3: Highlight Feature Edits (2 Horizontal Videos) -->
+      <div class="video-group-header">
+        <h3 class="video-group-title">Featured Scene & Narrative Edits</h3>
+        <span class="video-group-meta">Horizontal 16:9 Cuts</span>
+      </div>
+
+      <div class="reels-highlight-row">
+        <!-- The Othr -->
+        <div class="reel-horizontal-card">
+          <div class="reel-horizontal-container">
+            <iframe 
+              src="https://player.vimeo.com/video/1247726943?title=0&byline=0&portrait=0&badge=0&autopause=0" 
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+              frameborder="0" 
+              allow="autoplay; fullscreen; picture-in-picture" 
+              allowfullscreen 
+              title="The Othr" 
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="video-card-caption-bar">
+            <div class="caption-title">The Othr</div>
+            <div class="caption-tag">Visual Storytelling • Dynamic Cuts</div>
+          </div>
+        </div>
+
+        <!-- Pellichoopulu Edit 01 -->
+        <div class="reel-horizontal-card">
+          <div class="reel-horizontal-container">
+            <iframe 
+              src="https://player.vimeo.com/video/1247726050?title=0&byline=0&portrait=0&badge=0&autopause=0" 
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+              frameborder="0" 
+              allow="autoplay; fullscreen; picture-in-picture" 
+              allowfullscreen 
+              title="Pellichoopulu Edit 01" 
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="video-card-caption-bar">
+            <div class="caption-title">Pellichoopulu Edit 01</div>
+            <div class="caption-tag">Film Edit • Dialogue & Comedic Timing</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Group 4: Cinematic Cuts & Film Edits -->
+      <div class="video-group-header">
+        <h3 class="video-group-title">Cinematic Cuts & Film Edits</h3>
+        <span class="video-group-meta">Color Grading • Sound Design</span>
+      </div>
+
+      <div class="reels-edits-grid">
+        <!-- Cinevaaram Final Cut -->
+        <div class="reel-edit-card">
+          <div class="reel-edit-container">
+            <iframe 
+              src="https://player.vimeo.com/video/1247726052?title=0&byline=0&portrait=0&badge=0&autopause=0" 
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+              frameborder="0" 
+              allow="autoplay; fullscreen; picture-in-picture" 
+              allowfullscreen 
+              title="Cinevaaram Final Cut" 
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="video-card-caption-bar">
+            <div class="caption-title">Cinevaaram Final Cut</div>
+            <div class="caption-tag">Film Showcase • Final Cut</div>
+          </div>
+        </div>
+
+        <!-- Cinevaaram Edit -->
+        <div class="reel-edit-card">
+          <div class="reel-edit-container">
+            <iframe 
+              src="https://player.vimeo.com/video/1247726803?title=0&byline=0&portrait=0&badge=0&autopause=0" 
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+              frameborder="0" 
+              allow="autoplay; fullscreen; picture-in-picture" 
+              allowfullscreen 
+              title="Cinevaaram Edit" 
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="video-card-caption-bar">
+            <div class="caption-title">Cinevaaram Edit</div>
+            <div class="caption-tag">Cinematic Scene • Sound Design</div>
+          </div>
+        </div>
+
+        <!-- Film Edit 01 -->
+        <div class="reel-edit-card">
+          <div class="reel-edit-container">
+            <iframe 
+              src="https://player.vimeo.com/video/1247726802?title=0&byline=0&portrait=0&badge=0&autopause=0" 
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+              frameborder="0" 
+              allow="autoplay; fullscreen; picture-in-picture" 
+              allowfullscreen 
+              title="Film Edit 01" 
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="video-card-caption-bar">
+            <div class="caption-title">Film Edit 01</div>
+            <div class="caption-tag">Narrative Film Cut • Timing & Color</div>
+          </div>
+        </div>
+      </div>
+
       <!-- Kicker Meta Bottom -->
       <div class="kicker-meta-bottom">
         <span>PORTFOLIO</span>
-        <span>SELECTED WORK- 2024-2025</span>
+        <span>SELECTED WORK • 2024–2025</span>
       </div>
     </section>
 
     <!-- ==========================================================================
-         SECTION 2: MOTION GRAPHICS VIDEOS (Image 4 & Image 5)
+         2. UI DESIGNING (EcoCart App UI/UX Case Study - Figma Prototype)
          ========================================================================== -->
-    <section class="motion-section" id="motion-graphics">
+    <section class="ui-design-section" id="ui-designing">
       <div class="section-kicker-header">
         <div class="kicker-meta">
-          <span>PORTFOLIO</span>
-          <span>SELECTED WORK- 2024-2025</span>
+          <span>UI / UX DESIGN CASE STUDY</span>
+          <span class="draft-coords">[ FIGMA PROTOTYPE // MOBILE APP ]</span>
+          <span>SELECTED WORK • 2024–2025</span>
         </div>
         <h2 class="kicker-main-title">
-          MOTION GRAPHICS
-          <span class="red-gradient-text">VIDEOS</span>
+          UI
+          <span class="luna-gradient-text">DESIGNING</span>
         </h2>
       </div>
 
-      <!-- Motion Showcase 1: Bobby Kolli AV -->
-      <div class="video-card-horizontal video-card-horizontal-frame"
-           data-title="Bobby Kolli AV — Director Tribute Showcase"
-           data-client="Director Profile Film"
-           data-desc="High-impact audio-visual tribute and kinetic motion graphics presentation developed for acclaimed filmmaker Bobby Kolli."
-           data-vimeo-id="1247726053">
-        <div class="video-horiz-container">
-          <iframe 
-            src="https://player.vimeo.com/video/1247726053?title=0&byline=0&portrait=0&badge=0&autopause=0" 
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
-            frameborder="0" 
-            allow="autoplay; fullscreen; picture-in-picture" 
-            allowfullscreen 
-            title="Bobby Kolli AV — Director Tribute Showcase"
-            loading="lazy">
-          </iframe>
+      <!-- EcoCart Case Study Showcase Box -->
+      <div class="ecocart-showcase-box">
+        <div class="ecocart-header-bar">
+          <div class="ecocart-title-area">
+            <span class="ecocart-sub-title">MOBILE APP & PRODUCT DESIGN CASE STUDY</span>
+            <h3 class="ecocart-main-title">EcoCart — Sustainable Grocery & Eco-Friendly Shopping App</h3>
+            <div class="ecocart-badges-row">
+              <span class="ecocart-badge">Figma Prototype</span>
+              <span class="ecocart-badge">UI / UX Research</span>
+              <span class="ecocart-badge">Design System</span>
+              <span class="ecocart-badge">Wireframing</span>
+              <span class="ecocart-badge">iOS & Android</span>
+            </div>
+          </div>
+          <div class="ecocart-actions-row">
+            <a href="assets/ecocart/EcoCart_App_Case_Study.pdf" target="_blank" rel="noopener" class="btn-ecocart-action btn-ecocart-primary">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+              </svg>
+              View Full PDF
+            </a>
+            <a href="assets/ecocart/EcoCart_App_Case_Study.pdf" download="EcoCart_App_Case_Study.pdf" class="btn-ecocart-action btn-ecocart-secondary">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+              </svg>
+              Download PDF
+            </a>
+          </div>
         </div>
-        <div class="video-card-caption-bar">
-          <div class="caption-title">Bobby Kolli AV — Director Tribute Showcase</div>
-          <div class="caption-tag">Motion Graphics • Audio-Visual • 4K Edit</div>
+
+        <!-- Continuous Scroll Viewport with Hint -->
+        <div class="ecocart-scroll-wrapper">
+          <div class="ecocart-scroll-hint">
+            <span>↕ Scroll inside viewport to explore full continuous artboard</span>
+            <span class="scroll-hint-coords">[ 2800 × 45710 PX ARTBOARD ]</span>
+          </div>
+          <div class="ecocart-scroll-viewport" tabindex="0" title="Scroll down to view continuous case study">
+            <img src="assets/ecocart/page_1.jpg" alt="EcoCart Full Case Study Continuous Artboard" class="ecocart-long-image" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Chapter Slides Grid (10 Slices with lightbox preview) -->
+        <div class="ecocart-slices-container">
+          <div class="ecocart-slices-header">
+            <h4>CASE STUDY CHAPTERS & SCREEN FLOWS</h4>
+            <span>Click any slide to inspect in high-resolution</span>
+          </div>
+          <div class="ecocart-slices-grid">
+            <div class="ecocart-slide-card" data-slice="1" data-img="assets/ecocart/slices/slice_1.jpg" data-title="EcoCart: Cover & Project Overview">
+              <div class="ecocart-slide-img-box">
+                <img src="assets/ecocart/slices/slice_1.jpg" alt="Chapter 01 - Cover & Project Overview" loading="lazy">
+              </div>
+              <div class="ecocart-slide-meta">
+                <span class="ecocart-slide-title">Cover & Project Overview</span>
+                <span class="ecocart-slide-num">01 / 10</span>
+              </div>
+            </div>
+
+            <div class="ecocart-slide-card" data-slice="2" data-img="assets/ecocart/slices/slice_2.jpg" data-title="EcoCart: Problem Statement & Market Research">
+              <div class="ecocart-slide-img-box">
+                <img src="assets/ecocart/slices/slice_2.jpg" alt="Chapter 02 - Problem Statement & Market Research" loading="lazy">
+              </div>
+              <div class="ecocart-slide-meta">
+                <span class="ecocart-slide-title">Problem Statement & Research</span>
+                <span class="ecocart-slide-num">02 / 10</span>
+              </div>
+            </div>
+
+            <div class="ecocart-slide-card" data-slice="3" data-img="assets/ecocart/slices/slice_3.jpg" data-title="EcoCart: User Personas & Pain Points">
+              <div class="ecocart-slide-img-box">
+                <img src="assets/ecocart/slices/slice_3.jpg" alt="Chapter 03 - User Personas & Pain Points" loading="lazy">
+              </div>
+              <div class="ecocart-slide-meta">
+                <span class="ecocart-slide-title">User Personas & Pain Points</span>
+                <span class="ecocart-slide-num">03 / 10</span>
+              </div>
+            </div>
+
+            <div class="ecocart-slide-card" data-slice="4" data-img="assets/ecocart/slices/slice_4.jpg" data-title="EcoCart: Information Architecture & User Flow">
+              <div class="ecocart-slide-img-box">
+                <img src="assets/ecocart/slices/slice_4.jpg" alt="Chapter 04 - Information Architecture & User Flow" loading="lazy">
+              </div>
+              <div class="ecocart-slide-meta">
+                <span class="ecocart-slide-title">Information Architecture & Flow</span>
+                <span class="ecocart-slide-num">04 / 10</span>
+              </div>
+            </div>
+
+            <div class="ecocart-slide-card" data-slice="5" data-img="assets/ecocart/slices/slice_5.jpg" data-title="EcoCart: Wireframing & UX Foundations">
+              <div class="ecocart-slide-img-box">
+                <img src="assets/ecocart/slices/slice_5.jpg" alt="Chapter 05 - Wireframing & UX Foundations" loading="lazy">
+              </div>
+              <div class="ecocart-slide-meta">
+                <span class="ecocart-slide-title">Wireframes & UX Architecture</span>
+                <span class="ecocart-slide-num">05 / 10</span>
+              </div>
+            </div>
+
+            <div class="ecocart-slide-card" data-slice="6" data-img="assets/ecocart/slices/slice_6.jpg" data-title="EcoCart: Visual Identity & Design System">
+              <div class="ecocart-slide-img-box">
+                <img src="assets/ecocart/slices/slice_6.jpg" alt="Chapter 06 - Visual Identity & Design System" loading="lazy">
+              </div>
+              <div class="ecocart-slide-meta">
+                <span class="ecocart-slide-title">Design System & Typography</span>
+                <span class="ecocart-slide-num">06 / 10</span>
+              </div>
+            </div>
+
+            <div class="ecocart-slide-card" data-slice="7" data-img="assets/ecocart/slices/slice_7.jpg" data-title="EcoCart: Key App Screens & Interactions">
+              <div class="ecocart-slide-img-box">
+                <img src="assets/ecocart/slices/slice_7.jpg" alt="Chapter 07 - Key App Screens & Interactions" loading="lazy">
+              </div>
+              <div class="ecocart-slide-meta">
+                <span class="ecocart-slide-title">Primary Screens & Browsing</span>
+                <span class="ecocart-slide-num">07 / 10</span>
+              </div>
+            </div>
+
+            <div class="ecocart-slide-card" data-slice="8" data-img="assets/ecocart/slices/slice_8.jpg" data-title="EcoCart: Cart, Checkout & Eco-Impact Tracker">
+              <div class="ecocart-slide-img-box">
+                <img src="assets/ecocart/slices/slice_8.jpg" alt="Chapter 08 - Cart, Checkout & Eco-Impact Tracker" loading="lazy">
+              </div>
+              <div class="ecocart-slide-meta">
+                <span class="ecocart-slide-title">Cart & Impact Calculator</span>
+                <span class="ecocart-slide-num">08 / 10</span>
+              </div>
+            </div>
+
+            <div class="ecocart-slide-card" data-slice="9" data-img="assets/ecocart/slices/slice_9.jpg" data-title="EcoCart: Rewards, Badges & Micro-Interactions">
+              <div class="ecocart-slide-img-box">
+                <img src="assets/ecocart/slices/slice_9.jpg" alt="Chapter 09 - Rewards, Badges & Micro-Interactions" loading="lazy">
+              </div>
+              <div class="ecocart-slide-meta">
+                <span class="ecocart-slide-title">Green Rewards & Gamification</span>
+                <span class="ecocart-slide-num">09 / 10</span>
+              </div>
+            </div>
+
+            <div class="ecocart-slide-card" data-slice="10" data-img="assets/ecocart/slices/slice_10.jpg" data-title="EcoCart: Conclusion & Final Deliverables">
+              <div class="ecocart-slide-img-box">
+                <img src="assets/ecocart/slices/slice_10.jpg" alt="Chapter 10 - Conclusion & Final Deliverables" loading="lazy">
+              </div>
+              <div class="ecocart-slide-meta">
+                <span class="ecocart-slide-title">Conclusion & Final Deliverables</span>
+                <span class="ecocart-slide-num">10 / 10</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Motion Showcase 2: Vivek Athreya AV -->
-      <div class="video-card-horizontal video-card-horizontal-frame"
-           data-title="Vivek Athreya AV — Final Cut"
-           data-client="Film Profile & Direction"
-           data-desc="Cinematic director feature profiling Vivek Athreya with stylized kinetic typography, narrative sound design, and color grading."
-           data-vimeo-id="1247726051">
-        <div class="video-horiz-container">
-          <iframe 
-            src="https://player.vimeo.com/video/1247726051?title=0&byline=0&portrait=0&badge=0&autopause=0" 
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
-            frameborder="0" 
-            allow="autoplay; fullscreen; picture-in-picture" 
-            allowfullscreen 
-            title="Vivek Athreya AV — Final Cut"
-            loading="lazy">
-          </iframe>
-        </div>
-        <div class="video-card-caption-bar">
-          <div class="caption-title">Vivek Athreya AV — Final Cut</div>
-          <div class="caption-tag">Motion Typography • Cinematic Direction • Final Cut</div>
-        </div>
-      </div>
-
-      <!-- Kicker Meta Bottom -->
       <div class="kicker-meta-bottom">
         <span>PORTFOLIO</span>
-        <span>SELECTED WORK- 2024-2025</span>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         SECTION 3: REELS & CINEMATIC EDITS
-         ========================================================================== -->
-    <section class="reels-section" id="social-reels">
-      <div class="reels-showcase-stack">
-        <!-- Highlight Row: 2 Horizontal 16:9 Videos -->
-        <div class="reels-highlight-row">
-          <!-- 1. The Othr — Film Reel (16:9) -->
-          <div class="reel-horizontal-card"
-               data-title="The Othr — Film Reel"
-               data-client="Creative Reel Production"
-               data-desc="Fast-paced dynamic cut featuring rhythmic pacing, kinetic beats, and audio synchronization."
-               data-vimeo-id="1247726943">
-            <div class="reel-horizontal-container">
-              <iframe 
-                src="https://player.vimeo.com/video/1247726943?title=0&byline=0&portrait=0&badge=0&autopause=0" 
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
-                frameborder="0" 
-                allow="autoplay; fullscreen; picture-in-picture" 
-                allowfullscreen 
-                title="The Othr — Film Reel"
-                loading="lazy">
-              </iframe>
-            </div>
-            <div class="video-card-caption-bar">
-              <div class="caption-title">The Othr — Film Reel</div>
-              <div class="caption-tag">Kinetic Cut • 4K Edit</div>
-            </div>
-          </div>
-
-          <!-- 2. Feature Scene Edit (16:9) -->
-          <div class="reel-horizontal-feature"
-               data-title="Pellichoopulu Edit 01"
-               data-client="Film Scene Narrative"
-               data-desc="Narrative film scene re-edit featuring crisp comedic timing, dialogue structuring, and seamless rhythm."
-               data-vimeo-id="1247726050">
-            <div class="reel-horizontal-container">
-              <iframe 
-                src="https://player.vimeo.com/video/1247726050?title=0&byline=0&portrait=0&badge=0&autopause=0" 
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
-                frameborder="0" 
-                allow="autoplay; fullscreen; picture-in-picture" 
-                allowfullscreen 
-                title="Pellichoopulu Edit 01"
-                loading="lazy">
-              </iframe>
-            </div>
-            <div class="video-card-caption-bar">
-              <div class="caption-title">Pellichoopulu Edit 01</div>
-              <div class="caption-tag">Film Edit • Dialogue & Timing</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Cinematic Edits 3-Card Grid -->
-        <div class="reels-edits-grid">
-          <!-- 3. Cinevaaram Final Cut -->
-          <div class="reel-edit-card"
-               data-title="Cinevaaram — Final Cut"
-               data-client="Cinevaaram Production"
-               data-desc="Comprehensive master cut balancing narrative flow, audio mastering, and broadcast delivery."
-               data-vimeo-id="1247726052">
-            <div class="reel-edit-container">
-              <iframe 
-                src="https://player.vimeo.com/video/1247726052?title=0&byline=0&portrait=0&badge=0&autopause=0" 
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
-                frameborder="0" 
-                allow="autoplay; fullscreen; picture-in-picture" 
-                allowfullscreen 
-                title="Cinevaaram — Final Cut"
-                loading="lazy">
-              </iframe>
-            </div>
-            <div class="video-card-caption-bar">
-              <div class="caption-title">Cinevaaram — Final Cut</div>
-              <div class="caption-tag">Master Feature Cut</div>
-            </div>
-          </div>
-
-          <!-- 4. Cinevaaram Edit -->
-          <div class="reel-edit-card"
-               data-title="Cinevaaram Edit"
-               data-client="Cinevaaram Series"
-               data-desc="Episodic pacing, sequence assembly, color continuity, and dialogue enhancement."
-               data-vimeo-id="1247726803">
-            <div class="reel-edit-container">
-              <iframe 
-                src="https://player.vimeo.com/video/1247726803?title=0&byline=0&portrait=0&badge=0&autopause=0" 
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
-                frameborder="0" 
-                allow="autoplay; fullscreen; picture-in-picture" 
-                allowfullscreen 
-                title="Cinevaaram Edit"
-                loading="lazy">
-              </iframe>
-            </div>
-            <div class="video-card-caption-bar">
-              <div class="caption-title">Cinevaaram Edit</div>
-              <div class="caption-tag">Episodic Cut</div>
-            </div>
-          </div>
-
-          <!-- 5. Cinematic Film Edit 01 -->
-          <div class="reel-edit-card"
-               data-title="Cinematic Film Edit 01"
-               data-client="Creative Film Lab"
-               data-desc="Stylized scene edit demonstrating rhythmic cuts, beat-matched transitions, and mood development."
-               data-vimeo-id="1247726802">
-            <div class="reel-edit-container">
-              <iframe 
-                src="https://player.vimeo.com/video/1247726802?title=0&byline=0&portrait=0&badge=0&autopause=0" 
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
-                frameborder="0" 
-                allow="autoplay; fullscreen; picture-in-picture" 
-                allowfullscreen 
-                title="Cinematic Film Edit 01"
-                loading="lazy">
-              </iframe>
-            </div>
-            <div class="video-card-caption-bar">
-              <div class="caption-title">Cinematic Film Edit 01</div>
-              <div class="caption-tag">Cinematic Pacing</div>
-            </div>
-          </div>
-        </div>
+        <span>SELECTED WORK • 2024–2025</span>
       </div>
     </section>
 
@@ -889,7 +1036,7 @@
        ========================================================================== -->
   <aside class="floating-hire-bar" id="floating-hire-bar">
     <div class="hire-bar-avatar-box">
-      <img src="images/devi_about.png" alt="Devi Prasad" class="hire-bar-avatar" style="object-fit: cover; object-position: top center;">
+      <div class="hire-monogram-badge">DP</div>
       <div class="hire-status-dot" title="Available for projects"></div>
     </div>
     <span class="hire-bar-text">Devi Prasad is available for hire</span>
@@ -917,7 +1064,7 @@
           <div class="lightbox-meta-tag" id="lightbox-tag">Cultural Event • 2025</div>
           <h3 class="lightbox-title" id="lightbox-title">Poster Title</h3>
           <p class="lightbox-desc" id="lightbox-desc">Poster project description.</p>
-          <div style="font-size: 0.8rem; color: #dedede; font-weight: 600;" id="lightbox-client">Client: Brand Collaboration</div>
+          <div style="font-size: 0.8rem; color: #dedede; font-weight: 600;" id="lightbox-client">Client: Amity University</div>
           
           <div style="margin-top: auto; padding-top: 16px;">
             <div style="font-size: 0.75rem; text-transform: uppercase; color: #888; margin-bottom: 6px;">Tools Used:</div>
@@ -961,10 +1108,10 @@
     <div class="modal-content-box" style="max-width: 520px; padding: 32px 28px;">
       <button class="modal-close-btn" id="hire-modal-close" aria-label="Close booking modal">✕</button>
       <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 20px;">
-        <img src="images/devi_about.png" alt="Devi Prasad" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; object-position: top center;">
+        <div class="modal-monogram-badge">DP</div>
         <div>
           <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: #fff;">Hire Devi Prasad</h3>
-          <p style="font-size: 0.8rem; color: #10b981; font-weight: 600;">● Available for Freelance & Contracts</p>
+          <p style="font-size: 0.8rem; color: #54ACBF; font-weight: 600;">● Available for Freelance & Contracts</p>
         </div>
       </div>
 
