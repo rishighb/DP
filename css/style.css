@@ -75,7 +75,7 @@ html {
 }
 
 /* ==========================================================================
-   CHARCOAL WASHED BLACK PAPER BACKGROUND (TONED DOWN GREYS & WHITES)
+   LUNA BLUE CINEMATIC BACKGROUND
    ========================================================================== */
 body {
   font-family: var(--font-body);
@@ -103,12 +103,12 @@ body::before {
   background-image: url('../assets/art_signs_overlay.png');
   background-repeat: repeat;
   background-size: 1200px 1200px;
-  opacity: 0.15;
+  opacity: 0.22;
   pointer-events: none;
   z-index: 998;
 }
 
-/* Layer 2: Film Dust & Scratches Texture Overlay */
+/* Layer 2: Film Dust & Blue Watermark Stencil Texture Overlay */
 body::after {
   content: '';
   position: fixed;
@@ -119,7 +119,7 @@ body::after {
   background-image: url('../assets/dust_pattern.jpg');
   background-repeat: repeat;
   background-size: 500px auto;
-  opacity: 0.08;
+  opacity: 0.22;
   mix-blend-mode: screen;
   pointer-events: none;
   z-index: 999;
@@ -435,7 +435,7 @@ button {
 }
 
 /* ==========================================================================
-   HERO SECTION (Black Paper with Distressed Red Spray & Cutout)
+   HERO SECTION (Frosted Glass with Luminous Blue Glow & Details)
    ========================================================================== */
 .hero-section {
   position: relative;
@@ -1898,8 +1898,6 @@ button {
   background: linear-gradient(180deg, var(--palette-c1) 0%, var(--palette-c3) 100%);
   transform: translateY(-2px);
   box-shadow: 0 8px 25px var(--accent-red-glow);
-}
-  box-shadow: 0 8px 25px rgba(235, 94, 101, 0.5);
 }
 
 /* Social Links & Direct Channels */
