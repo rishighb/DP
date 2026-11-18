@@ -492,9 +492,9 @@ button {
 /* Giant Distressed Title */
 .hero-giant-title {
   font-family: var(--font-impact);
-  font-size: clamp(6.2rem, 16vw, 12.5rem);
-  line-height: 0.88;
-  letter-spacing: 0.06em;
+  font-size: clamp(3rem, 13.5vw, 11rem);
+  line-height: 0.9;
+  letter-spacing: clamp(0.01em, 0.8vw, 0.05em);
   text-transform: uppercase;
   color: #ffffff;
   background: linear-gradient(180deg, #ffffff 40%, var(--palette-c2) 80%, var(--palette-c1) 100%);
@@ -505,6 +505,8 @@ button {
   filter: drop-shadow(0 0 35px var(--accent-red-glow)) drop-shadow(0 15px 30px rgba(0,0,0,0.8));
   position: relative;
   z-index: 1;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Red Spray Paint Mist Halo behind letters */
@@ -2567,8 +2569,22 @@ button {
   }
 
   .hero-section {
-    padding: 20px 14px 16px 14px;
+    padding: 20px 10px 16px 10px;
     margin-top: 54px;
+    overflow: hidden;
+  }
+
+  .hero-centerpiece {
+    min-height: 160px;
+    padding: 16px 0;
+  }
+
+  .hero-giant-title {
+    font-size: clamp(2.4rem, 13vw, 4.2rem);
+    letter-spacing: 0.02em;
+    max-width: 100%;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   .hero-top-corners {

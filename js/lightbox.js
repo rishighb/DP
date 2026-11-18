@@ -7,121 +7,109 @@ class PosterLightbox {
     this.posters = [
       {
         id: 'poster_1',
-        title: 'Social Campaign & Brand Identity',
-        tag: 'Brand & Social Media • Editorial',
+        title: 'Ad 01',
+        tag: 'Advertising Design • Commercial',
         tools: ['Figma', 'Adobe Photoshop'],
-        client: 'Brand Collaboration',
-        year: '2024–2025',
-        desc: 'Creative social media campaign visual crafted with bold branding, dynamic typography, and high-impact visual hierarchy.',
+        client: 'Commercial Campaign',
+        desc: 'Ad 01 — Creative advertising campaign visual crafted with bold branding, dynamic typography, and high-impact visual hierarchy.',
         src: 'assets/posters/poster_1.jpg'
       },
       {
         id: 'poster_2',
-        title: 'Digital Media Campaign - Creative 02',
+        title: 'Digital Brand Campaign 01',
         tag: 'Digital Marketing • Social Creative',
         tools: ['Adobe Photoshop', 'Illustrator'],
-        client: 'Media Production',
-        year: '2024–2025',
+        client: 'Brand Media Production',
         desc: 'Engaging digital media design highlighting focal storytelling, balanced composition, and refined color harmony.',
         src: 'assets/posters/poster_2.jpg'
       },
       {
         id: 'poster_3',
-        title: 'Visual Storytelling Poster Series',
-        tag: 'Visual Communication • Graphic',
+        title: 'Social Campaign & Brand Identity 02',
+        tag: 'Brand & Social Media • Editorial',
         tools: ['Adobe Illustrator', 'Photoshop'],
         client: 'Creative Studio',
-        year: '2024–2025',
         desc: 'Expressive graphic composition combining structured editorial typography with photographic storytelling.',
         src: 'assets/posters/poster_3.jpg'
       },
       {
         id: 'poster_4',
-        title: 'Editorial Art Direction Poster',
-        tag: 'Editorial & Art Direction',
+        title: 'Digital Brand Campaign 02',
+        tag: 'Editorial & Brand Direction',
         tools: ['Photoshop', 'Lightroom'],
         client: 'Studio Series',
-        year: '2024–2025',
         desc: 'Art-directed editorial poster emphasizing mood, texture, contemporary design language, and negative space.',
         src: 'assets/posters/poster_4.jpg'
       },
       {
         id: 'poster_5',
-        title: 'Cinematic Typographic Poster',
+        title: 'Cinematic Storytelling 01',
         tag: 'Modern Typography • Concept Art',
         tools: ['Adobe Photoshop', 'Figma'],
         client: 'Visual Identity',
-        year: '2024–2025',
-        desc: 'Bold typographic poster exploring scale contrast, textured shadows, and modern brutalist sensibilities.',
+        desc: 'Bold typographic poster exploring scale contrast, textured shadows, and modern sensibilities.',
         src: 'assets/posters/poster_5.jpg'
       },
       {
         id: 'poster_6',
-        title: 'Minimalist Editorial Visual',
+        title: 'Cinematic Storytelling 02',
         tag: 'Print & Digital Layout',
         tools: ['Adobe InDesign', 'Photoshop'],
         client: 'Publication Feature',
-        year: '2024–2025',
         desc: 'Sleek editorial layout balancing stark contrast with delicate typographic details and clean margin grids.',
         src: 'assets/posters/poster_6.jpg'
       },
       {
         id: 'poster_7',
-        title: 'NAIP National Conference Design',
+        title: 'Festive Brand Campaign 01',
         tag: 'Academic & Event Identity',
         tools: ['Canva', 'Adobe Illustrator'],
-        client: 'University & Event Board',
-        year: '2024–2025',
+        client: 'Event Board',
         desc: 'Official conference key visual and invitation graphics developed for national academic presentation and print collateral.',
         src: 'assets/posters/poster_7.jpg'
       },
       {
         id: 'poster_8',
-        title: 'EcoCart UI/UX & Brand Concept',
+        title: 'Digital Brand Campaign 03',
         tag: 'Mobile App & Digital Product',
         tools: ['Figma', 'Adobe Illustrator'],
-        client: 'EcoCart Brand',
-        year: '2024–2025',
-        desc: 'Comprehensive mobile product UI design and promotional branding graphics emphasizing sustainable commerce and intuitive navigation.',
+        client: 'Product Brand',
+        desc: 'Digital brand campaign graphic emphasizing modern product presentation and visual identity.',
         src: 'assets/posters/poster_8.jpg'
       },
       {
         id: 'poster_9',
-        title: 'Event Promotion & Key Visual',
+        title: 'Festive Brand Campaign 02',
         tag: 'Event Showcase • Key Visual',
         tools: ['Adobe Photoshop'],
-        client: 'Cultural Festival',
-        year: '2024–2025',
+        client: 'Festive Campaign',
         desc: 'High-energy event promotional poster designed for multi-channel digital distribution and stage screen display.',
         src: 'assets/posters/poster_9.jpg'
       },
       {
         id: 'poster_10',
-        title: 'Graphic Identity & Emblem',
+        title: 'Festive Brand Campaign 03',
         tag: 'Vector Iconography • Square Frame',
         tools: ['Adobe Illustrator', 'Figma'],
-        client: 'Brand Identity',
-        year: '2024–2025',
+        client: 'Festive Identity',
         desc: 'Clean geometric brand mark and identity emblem featuring balance, symmetry, and scalable vector craftsmanship.',
         src: 'assets/posters/poster_10.jpg'
       },
       {
         id: 'poster_11',
-        title: 'Editorial Portrait & Layout',
+        title: 'Cinematic 03',
         tag: 'Editorial Art • Digital Composite',
         tools: ['Adobe Photoshop'],
         client: 'Media Magazine',
-        year: '2024–2025',
         desc: 'Richly textured portrait layout fusing photography with contemporary graphic treatment and publication styling.',
         src: 'assets/posters/poster_11.jpg'
       },
       {
         id: 'poster_12',
-        title: 'Festival & Story Key Visual',
+        title: 'Cinematic 04',
         tag: 'Vertical Mobile Experience',
         tools: ['Adobe Photoshop', 'Lightroom'],
         client: 'Digital Story Series',
-        year: '2024–2025',
         desc: 'Vertical 9:16 mobile story visual with vibrant saturation, cinematic lighting, and dynamic typographic overlays.',
         src: 'assets/posters/poster_12.jpg'
       }
@@ -158,7 +146,6 @@ class PosterLightbox {
           src: imgSrc,
           title: title,
           tag: `Figma Mobile UI • Chapter ${num} of 10`,
-          year: '2024–2025',
           desc: 'High-fidelity Figma screen mockups, UX workflows, and user journey design for the EcoCart sustainable grocery shopping app.',
           client: 'EcoCart Mobile Product',
           tools: ['Figma', 'UI/UX Design', 'Design System', 'Prototyping']
@@ -207,7 +194,7 @@ class PosterLightbox {
       this.imgEl.alt = data.title;
     }
     if (this.titleEl) this.titleEl.textContent = data.title;
-    if (this.tagEl) this.tagEl.textContent = `${data.tag} • ${data.year}`;
+    if (this.tagEl) this.tagEl.textContent = data.tag;
 
     if (this.toolsEl) {
       this.toolsEl.innerHTML = '';
@@ -253,7 +240,7 @@ class PosterLightbox {
       this.imgEl.alt = data.title;
     }
     if (this.titleEl) this.titleEl.textContent = data.title;
-    if (this.tagEl) this.tagEl.textContent = `${data.tag} • ${data.year}`;
+    if (this.tagEl) this.tagEl.textContent = data.tag;
 
     if (this.toolsEl) {
       this.toolsEl.innerHTML = '';
